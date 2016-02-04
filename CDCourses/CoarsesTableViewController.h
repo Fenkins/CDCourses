@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "Course.h"
 
 @interface CoarsesTableViewController : UITableViewController
 @property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,strong) NSFetchedResultsController *fetchedResultsController;
 @end
