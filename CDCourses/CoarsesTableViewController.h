@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "Course.h"
+#import "AddCourseViewController.h"
 
-@interface CoarsesTableViewController : UITableViewController
+@interface CoarsesTableViewController : UITableViewController <AddCourseViewControllerDelegate>
 @property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic,strong) NSFetchedResultsController *fetchedResultsController;
 @end

@@ -14,6 +14,36 @@
 
 @implementation CoarsesTableViewController
 
+#pragma mark -
+#pragma mark addCourseDelegate methods
+-(void)addCourseViewControllerDidSave {
+    NSError* error = nil;
+    NSManagedObjectContext *context = self.managedObjectContext;
+    if (![context save:&error]) {
+        NSLog(@"Error! %@",error);
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)addCourseViewControllerDidCancel:(Course *)courseToDelete {
+    NSManagedObjectContext *context = self.managedObjectContext;
+    [context deleteObject:courseToDelete];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+#pragma mark -
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier]isEqualToString:@"addCourse"]) {
+        AddCourseViewController* acvc = (AddCourseViewController*)[segue destinationViewController];
+        acvc.delegate = self;
+        
+        Course* newCourse = [NSEntityDescription insertNewObjectForEntityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];
+        
+        acvc.currentCourse = newCourse;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

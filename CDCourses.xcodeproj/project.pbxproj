@@ -17,6 +17,7 @@
 		AA1F181A1C5425D600092B58 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F18171C5425D600092B58 /* Course+CoreDataProperties.m */; };
 		AA1F181B1C5425D600092B58 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F18191C5425D600092B58 /* Course.m */; };
 		AA1F181E1C542DE600092B58 /* CoarsesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F181D1C542DE600092B58 /* CoarsesTableViewController.m */; };
+		AA7EE9061C67533C00D6A489 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EE9051C67533C00D6A489 /* AddCourseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		AA1F18191C5425D600092B58 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Course.m; path = ../Course.m; sourceTree = "<group>"; };
 		AA1F181C1C542DE600092B58 /* CoarsesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoarsesTableViewController.h; sourceTree = "<group>"; };
 		AA1F181D1C542DE600092B58 /* CoarsesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoarsesTableViewController.m; sourceTree = "<group>"; };
+		AA7EE9041C67533C00D6A489 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		AA7EE9051C67533C00D6A489 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				AA1F180D1C5424E800092B58 /* LaunchScreen.storyboard */,
 				AA1F18101C5424E800092B58 /* Info.plist */,
 				AA1F17FC1C5424E800092B58 /* Supporting Files */,
+				AA7EE9041C67533C00D6A489 /* AddCourseViewController.h */,
+				AA7EE9051C67533C00D6A489 /* AddCourseViewController.m */,
 			);
 			path = CDCourses;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				AA1F18011C5424E800092B58 /* AppDelegate.m in Sources */,
 				AA1F181E1C542DE600092B58 /* CoarsesTableViewController.m in Sources */,
 				AA1F17FE1C5424E800092B58 /* main.m in Sources */,
+				AA7EE9061C67533C00D6A489 /* AddCourseViewController.m in Sources */,
 				AA1F181B1C5425D600092B58 /* Course.m in Sources */,
 				AA1F181A1C5425D600092B58 /* Course+CoreDataProperties.m in Sources */,
 			);
@@ -321,6 +327,7 @@
 				AA1F18151C5424E800092B58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
