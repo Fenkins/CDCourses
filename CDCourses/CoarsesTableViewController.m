@@ -53,7 +53,7 @@
         return _fetchedResultsController;
     }
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Coarse" inManagedObjectContext:[self managedObjectContext]];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];
     [fetchRequest setEntity:entity];
 // Specify how the fetched objects should be sorted
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"author"
